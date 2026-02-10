@@ -1,5 +1,8 @@
+import { RouterProvider } from "react-router-dom";
+import { appRouter } from "./routes/appRouter";
+
 function App() {
-  return <h1 className="text-6xl text-blue-400">digispace</h1>;
+  return <RouterProvider router={appRouter} />;
 }
 
 export default App;

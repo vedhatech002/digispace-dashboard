@@ -1,1 +1,35 @@
 @import "tailwindcss";
+
+:root {
+  /* Base backgrounds */
+  --bg-main: #0e1415;
+  --bg-sidebar: #0b1011;
+
+  /* Card */
+  --bg-card: rgba(24, 64, 61, 0.45);
+
+  /* Accents */
+  --color-accent: #2ef2c5;
+
+  /* Text */
+  --text-primary: #e6f5f3;
+  --text-secondary: #8fafb0;
+  --text-muted: #6e8f8e;
+}
+body {
+  background-image: linear-gradient(
+    to right bottom,
+    #153231,
+    #13292f,
+    #162028,
+    #16181e,
+    #120f13,
+    #120f13,
+    #120f13,
+    #120f13,
+    #16181e,
+    #162028,
+    #13292f,
+    #153231
+  );
+}
