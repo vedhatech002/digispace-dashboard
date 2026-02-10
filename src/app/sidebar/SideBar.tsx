@@ -1,4 +1,6 @@
+// React and related imports
 import { NavLink } from "react-router-dom";
+// assets
 import HomeIcon from "../../assets/nav-icons/home.svg?react";
 import PieIcon from "../../assets/nav-icons/pie.svg?react";
 import TilesIcon from "../../assets/nav-icons/tiles.svg?react";

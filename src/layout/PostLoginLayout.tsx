@@ -1,4 +1,6 @@
+// React and related imports
 import { Outlet } from "react-router-dom";
+// components
 import Sidebar from "../app/sidebar/SideBar";
 import Header from "../app/header/Header";
 
@@ -8,12 +10,8 @@ const PostLoginLayout = () => {
       {/* Header */}
       <Header />
 
-      {/* Body section (below header) */}
       <div className="flex flex-1 overflow-hidden">
-        {/* Sidebar (NOT full height, only content height) */}
-
         <Sidebar />
-
         {/* Main content */}
         <main className="flex-1 p-6 overflow-auto">
           <Outlet />

@@ -1,5 +1,8 @@
+// React and react-related imports
 import { createBrowserRouter, Navigate } from "react-router-dom";
+// components
 import PostLoginLayout from "../layout/PostLoginLayout";
+import DashboardPage from "../pages/dashboard/DashboardPage";
 
 export const appRouter = createBrowserRouter([
   {
@@ -12,7 +15,7 @@ export const appRouter = createBrowserRouter([
       },
       {
         path: "dashboard",
-        element: <h1>dashboard</h1>,
+        element: <DashboardPage />,
       },
       // future routes:
       { path: "analyse", element: <h1>Analyze</h1> },

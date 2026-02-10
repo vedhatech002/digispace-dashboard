@@ -1,3 +1,6 @@
+// React and realted imports
+import { NavLink } from "react-router-dom";
+// assets
 import Logo from "../../assets/ds-logo.svg?react";
 import ProfileImg from "../../assets/user-profile.jpg";
 
@@ -6,9 +9,11 @@ const Header = () => {
     <header
       className="
         h-16 flex items-center justify-between px-6
-      "
+"
     >
-      <Logo className="cursor-pointer" />
+      <NavLink to={"/dashboard"}>
+        <Logo className="cursor-pointer" />
+      </NavLink>
 
       <img
         src={ProfileImg}
