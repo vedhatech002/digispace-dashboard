@@ -16,7 +16,11 @@ const LightsCard = () => {
   const [enabled, setEnabled] = useState(true);
 
   return (
-    <Card>
+    <Card
+      className="bg-[linear-gradient(to_right_bottom,#153231,#14262d,#171a22,#120f13,#000000)]
+
+"
+    >
       <CardHeader
         title="Lights"
         icon={
