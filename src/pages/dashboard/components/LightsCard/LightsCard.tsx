@@ -17,7 +17,9 @@ const LightsCard = () => {
 
   return (
     <Card
-      className="bg-[linear-gradient(to_right_bottom,#153231,#14262d,#171a22,#120f13,#000000)]
+      className="
+      bg-gradient-to-br from-[#1f716a] via-[#195263] via-[#293446] via-[#211b23] to-black
+
 
 "
     >

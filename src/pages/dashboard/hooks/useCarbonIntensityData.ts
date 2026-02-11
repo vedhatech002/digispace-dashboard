@@ -1,5 +1,3 @@
-// import { CarbonIntensityData } from "./types";
-
 import type { CarbonIntensityData } from "../components/CarbonIntensityCard/types";
 
 export const useCarbonIntensityData = (): CarbonIntensityData => {
@@ -7,11 +5,11 @@ export const useCarbonIntensityData = (): CarbonIntensityData => {
     total: 95,
     unit: "gm CO₂/kWh",
     sources: [
-      { name: "Coal", value: 30, color: "#8B5A4E" },
-      { name: "Hydro", value: 20, color: "#F4A261" },
-      { name: "Nuclear", value: 20, color: "#9B5DE5" },
-      { name: "Wind", value: 15, color: "#2EF2C5" },
-      { name: "Solar", value: 15, color: "#F94144" },
+      { value: 30, name: "Coal", color: "#A67C73" },
+      { value: 20, name: "Hydro", color: "#F59E5F" },
+      { value: 20, name: "Nuclear", color: "#B565D8" },
+      { value: 10, name: "Wind", color: "#4DD4D8" },
+      { value: 25, name: "Solar", color: "#FF6B7A" },
     ],
   };
 };

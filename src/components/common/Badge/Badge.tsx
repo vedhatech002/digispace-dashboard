@@ -6,11 +6,11 @@ const Badge = ({ label }: BadgeProps) => {
   return (
     <span
       className="
-      px-3 py-1
+      px-4 py-2
       rounded-full
       text-xs
       bg-white/10
-      text-[var(--text-muted)]
+      text-[var(--text-primary)]
     "
     >
       {label}
