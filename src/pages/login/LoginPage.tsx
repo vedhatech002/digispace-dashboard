@@ -83,7 +83,7 @@ const LoginPage = () => {
             transition
           "
         >
-          <img src={UserIcon} alt="guest" className="w-5 />
+          <img src={UserIcon} alt="guest" className="w-5" />
           Continue as Guest
         </button>
       </div>
