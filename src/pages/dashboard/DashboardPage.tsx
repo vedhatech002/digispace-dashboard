@@ -1,5 +1,6 @@
 // Components
 import CarbonIntensityCard from "./components/CarbonIntensityCard/CarbonIntensityCard";
+import EnergyConsumptionCard from "./components/EnergyConsumptionCard/EnergyConsumptionCard";
 import LightsCard from "./components/LightsCard/LightsCard";
 
 const DashboardPage = () => {
@@ -16,6 +17,7 @@ const DashboardPage = () => {
       {/* <div className="col-span-2"> */}
       <LightsCard />
       <CarbonIntensityCard />
+      <EnergyConsumptionCard />
       {/* </div> */}
 
       {/* <WaterConsumptionCard /> */}
