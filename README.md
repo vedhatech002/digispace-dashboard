@@ -10,7 +10,7 @@ The implementation focuses on UI accuracy, reusable architecture, responsiveness
 ## 🌐 Live Demo
 
 🔗 **Production Link:**  
-(https://digispace-dashboard.vercel.app/)
+https://digispace-dashboard.vercel.app/
 
 ---
 
@@ -136,13 +136,11 @@ npm run dev
 npm run build
 
 
-
-
+```
 
 👨‍💻 Author
 
 Vijayavedhasekaran K
 Frontend Developer | React | TypeScript
 
-LinkedIn: (Add your LinkedIn link here)
-```
+LinkedIn: https://www.linkedin.com/in/vijayavedhasekaran/
