@@ -2,7 +2,7 @@
 import Card from "../../../../components/common/card/Card";
 import CardHeader from "../../../../components/common/card/CardHeader";
 import IconButton from "../../../../components/common/iconButton/IconButton";
-import Badge from "../../../../components/common/Badge/Badge";
+import Badge from "../../../../components/common/badge/Badge";
 import DonutChart from "../../../../components/charts/donut/DonutChart";
 
 // Assets
