@@ -51,12 +51,14 @@ const LoginPage = () => {
   return (
     <div className="h-screen flex items-center justify-center bg-[radial-gradient(ellipse_at_top_left,_#18403D_0%,_transparent_55%),radial-gradient(ellipse_at_center,_#14312F_0%,_transparent_60%)]">
       <div className="bg-[#11191a] p-10 rounded-3xl w-96 text-center shadow-2xl border border-white/5">
+        {/* Logo */}
         <div className="flex justify-center mb-6">
           <Logo className="w-32" />
         </div>
 
         <h2 className="text-2xl text-white font-semibold mb-8">Welcome Back</h2>
 
+        {/* Google Login */}
         <button
           onClick={handleGoogleLogin}
           className="
@@ -71,6 +73,7 @@ const LoginPage = () => {
           Login with Google
         </button>
 
+        {/* Guest Login */}
         <button
           onClick={handleGuestLogin}
           className="
@@ -84,6 +87,7 @@ const LoginPage = () => {
           "
         >
           <img src={UserIcon} alt="guest" className="w-5" />
+          {/* <UserIcon className="w-5 h-5" /> */}
           Continue as Guest
         </button>
       </div>
