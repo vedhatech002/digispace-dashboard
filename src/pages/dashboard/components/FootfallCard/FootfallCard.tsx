@@ -1,5 +1,5 @@
 // Components
-import Badge from "../../../../components/common/badge/Badge";
+import Badge from "../../../../components/common/Badge/Badge";
 import CardHeader from "../../../../components/common/card/CardHeader";
 import Card from "../../../../components/common/card/Card";
 import LineChart from "../../../../components/common/line/LineChart";
