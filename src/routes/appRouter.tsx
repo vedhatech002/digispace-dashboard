@@ -3,6 +3,8 @@ import { createBrowserRouter, Navigate } from "react-router-dom";
 // components
 import PostLoginLayout from "../layout/PostLoginLayout";
 import DashboardPage from "../pages/dashboard/DashboardPage";
+import Analyze from "../pages/analyse/Analyze";
+import Control from "../pages/control/Control";
 
 export const appRouter = createBrowserRouter([
   {
@@ -18,8 +20,8 @@ export const appRouter = createBrowserRouter([
         element: <DashboardPage />,
       },
       // future routes:
-      { path: "analyse", element: <h1>Analyze</h1> },
-      { path: "control", element: <h1>Control</h1> },
+      { path: "analyse", element: <Analyze /> },
+      { path: "control", element: <Control /> },
     ],
   },
 ]);

@@ -1,19 +1,24 @@
-// React and related imports
 import { Outlet } from "react-router-dom";
-// components
 import Sidebar from "../app/sidebar/SideBar";
 import Header from "../app/header/Header";
 
 const PostLoginLayout = () => {
   return (
-    <div className="min-h-screen flex flex-col">
-      {/* Header */}
-      <Header />
+    <div className="h-screen flex flex-col overflow-hidden">
+      {/* Fixed Header */}
+      <div className="shrink-0">
+        <Header />
+      </div>
 
+      {/* Body */}
       <div className="flex flex-1 overflow-hidden">
-        <Sidebar />
-        {/* Main content */}
-        <main className="flex-1 p-6 overflow-auto">
+        {/* Fixed Sidebar */}
+        <div className="shrink-0">
+          <Sidebar />
+        </div>
+
+        {/* Scrollable Main */}
+        <main className="flex-1 overflow-y-auto p-3 pb-20 md:pb-6">
           <Outlet />
         </main>
       </div>
