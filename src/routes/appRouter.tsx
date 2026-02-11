@@ -1,27 +1,50 @@
-// React and react-related imports
 import { createBrowserRouter, Navigate } from "react-router-dom";
-// components
+
 import PostLoginLayout from "../layout/PostLoginLayout";
 import DashboardPage from "../pages/dashboard/DashboardPage";
 import Analyze from "../pages/analyse/Analyze";
 import Control from "../pages/control/Control";
+import NotFoundPage from "../pages/not-found/NotFoundPage";
+import LoginPage from "../pages/login/LoginPage";
+import ProtectedRoute from "./ProtectedRoute";
 
 export const appRouter = createBrowserRouter([
   {
-    path: "/",
-    element: <PostLoginLayout />,
+    path: "/login",
+    element: <LoginPage />,
+  },
+
+  {
+    element: <ProtectedRoute />,
     children: [
       {
-        index: true,
-        element: <Navigate to="/dashboard" replace />,
+        path: "/",
+        element: <PostLoginLayout />,
+        children: [
+          {
+            index: true,
+            element: <Navigate to="/dashboard" replace />,
+          },
+          {
+            path: "dashboard",
+            element: <DashboardPage />,
+          },
+          {
+            path: "analyse",
+            element: <Analyze />,
+          },
+          {
+            path: "control",
+            element: <Control />,
+          },
+        ],
       },
-      {
-        path: "dashboard",
-        element: <DashboardPage />,
-      },
-      // future routes:
-      { path: "analyse", element: <Analyze /> },
-      { path: "control", element: <Control /> },
     ],
+  },
+
+  // 404
+  {
+    path: "*",
+    element: <NotFoundPage />,
   },
 ]);

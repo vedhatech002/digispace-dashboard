@@ -26,6 +26,9 @@ const DonutChart = ({
 
     const option: echarts.EChartsOption = {
       backgroundColor: "transparent",
+      animation: true,
+      animationDuration: 1500,
+      animationEasing: "elasticOut",
 
       tooltip: showTooltip
         ? {

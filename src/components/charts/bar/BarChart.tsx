@@ -1,7 +1,6 @@
 import { useEffect, useRef } from "react";
 import * as echarts from "echarts";
 import type { BarChartProps } from "./types";
-// import { BarChartProps } from "./types";
 
 const BarChart = ({
   labels,
